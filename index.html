@@ -7,16 +7,17 @@
 </head>
 <body>
 
-<form onsubmit="safeWork()">
-    <input type="text" placeholder="Titulek">
-    <select name="cars" id="cars">
+<form class="submit-form" id="form">
+    <input type="text" placeholder="Titulek" id="title">
+    <select name="priority" id="priority">
         <option value="high">High</option>
         <option value="mid">Mid</option>
         <option value="low">Low</option>
     </select>
-    <input type="number" placeholder="Datum">
-    <input type="submit">
+    <input type="number" placeholder="Datum" id="date">
+    <button type="button" onclick="addWork(this.form)">Submit</button>
 </form>
+
 
 <script src="script.js"></script>
 </body>
