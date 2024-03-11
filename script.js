@@ -13,7 +13,7 @@ function addWork(form) {
     const date = form.querySelector('#date').value;
 
     if (title == "") {
-        alert("Titulek nesmi byt prazdny.");
+        alert("Title can't be empty.");
     } else if (isNaN(date) || date > 12 || date < 1) {
         alert("Invalid date. Please enter a valid month (1-12).");
     } else {
