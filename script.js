@@ -15,7 +15,7 @@ function addWork(form) {
     if (title == "") {
         alert("Title can't be empty.");
     } else if (isNaN(date) || date > 12 || date < 1) {
-        alert("Invalid date. Please enter a valid month (1-12).");
+        alert("Invalid date. Please enter a valid month from 1 to 12 .");
     } else {
         const newDiv = document.createElement('div');
         newDiv.classList.add('new-div');
