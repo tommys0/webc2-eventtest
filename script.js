@@ -1,6 +1,7 @@
 let form = document.getElementById("form");
 
-function submitForm() {
+function submitForm(event) {
+    event.preventDefault()
     addWork(form);
 }
 
